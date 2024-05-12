@@ -27,7 +27,7 @@ cmake -S $REPO_HOME -B $BUILD_HOME \
 -DCMAKE_CXX_FLAGS="$_CXX__FLAG"  -DCMAKE_C_FLAGS="$_CXX__FLAG" \
 -S $REPO_HOME && \
 
-make -j8 && \
+( cd $BUILD_HOME && make -j8 ;) && \
 
 echo "编译产物如下:" && \
 ls -lh $LibFmtArchiv && file $LibFmtArchiv && \

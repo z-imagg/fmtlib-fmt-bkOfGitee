@@ -18,7 +18,6 @@ git_Clone_SwitchTag http://giteaz:3000/util/fmtlib-fmt.git tag__10.0.0 $REPO_HOM
 
 # set +x
 #2. 编译 fmt
-{ \
 
 function _reBuild_fmt() {
 cmakeInstall && \

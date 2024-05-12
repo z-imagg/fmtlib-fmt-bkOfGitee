@@ -34,6 +34,7 @@ ls -lh $LibFmtArchiv && file $LibFmtArchiv && \
 true
 }
 
+_msg_01="LibFmt编译产物已存在，重新编译请手工产出产物【$LibFmtArchiv】"
 
-
-[[ ! -f $LibFmtArchiv ]] && _reBuild_fmt
+#若编译产物不存在，则重新编译
+{ [[  -f $LibFmtArchiv ]] && echo $_msg_01 ;} || _reBuild_fmt

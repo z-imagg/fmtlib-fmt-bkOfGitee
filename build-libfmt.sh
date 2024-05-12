@@ -31,7 +31,7 @@ make -j8 && \
 
 echo "编译产物如下:" && \
 ls -lh $LibFmtArchiv && file $LibFmtArchiv && \
-
+true
 }
 
 
